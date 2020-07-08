@@ -33,7 +33,7 @@ export class CdkStack extends cdk.Stack {
 
     // Creating api gateway
     const api = new RestApi(this, `BoleiaDashboardApi${ENV}`, {
-      description: "API utilizada pelo dashboard do frontend do Profrotas como microsserviço para realizar as consultas ao Elasticsearch, validando o token do usuário no backend do Profrotas.",
+      description: "API Gateway de exemplo.",
     });
 
     // Creating resource and its methods

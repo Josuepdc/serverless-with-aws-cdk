@@ -19,7 +19,7 @@ class MyApplication extends cdk.Construct {
         Tag.add(this, "environment", ENV)
 
         new CdkStack(this, `ServerlessWebService${ENV}CdkStack`, {
-            description: "Stack para criar uma API Serverless com API Gateway e Lambda Functions utilizada pelo dashboard do frontend do Profrotas como microsserviço para realizar as consultas ao Elasticsearch, validando o token do usuário no backend do Profrotas.",
+            description: "Stack para criar uma API Serverless com API Gateway e Lambda Functions de exemplo.",
             env: {
                 account: BOOTSTRAP_ACCOUNT || 'placeholder',
                 region: BOOTSTRAP_REGION || 'placeholder',
