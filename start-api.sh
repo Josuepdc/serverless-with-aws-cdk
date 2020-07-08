@@ -4,7 +4,7 @@ echo "-- Building CloudFormation template..."
 cdk synth --no-staging \
 -c BOOTSTRAP_ACCOUNT= \
 -c BOOTSTRAP_REGION= \
--c ENV=local \
+-c ENV=Local \
 > template.yaml
 
 echo "-- Starting local API Gateway..."
